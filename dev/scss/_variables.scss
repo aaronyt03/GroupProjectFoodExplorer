@@ -16,7 +16,10 @@ $colors: (
 // borders
 $thin-border: 0.0625rem solid rgb(15, 72, 177);
 
-// querry
-$breakpoint-mobile: 640px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1024px;
+// media querry breakpoints
+$breakpoint-mobile-large: 320px;
+$breakpoint-tablet-small: 500px;
+$breakpoint-tablet-large: 700px;
+$breakpoint-desktop: 800px;
+
+$max-width-wrapper: 1050px; // wrapper max width
