@@ -1,4 +1,4 @@
 #wrapper {
-	background-image: url(../images/bg.jpg);
-	background-repeat: repeat;
+	max-width: $max-width-wrapper;
+	margin: $margin-spacing;
 }

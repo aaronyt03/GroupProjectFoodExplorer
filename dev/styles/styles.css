@@ -370,8 +370,8 @@ body {
     background-color: #1a71a9; }
 
 #wrapper {
-  background-image: url(../images/bg.jpg);
-  background-repeat: repeat; }
+  max-width: 1050px;
+  margin: 0 auto; }
 
 header .toggle {
   font-size: 5rem; }
@@ -399,44 +399,55 @@ header .toggle {
     bottom: 8px;
     padding: 8px; }
 
+#side-bar {
+  padding: 0px 15px 0px 15px; }
+
 #side-bar h2 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding: 0 10px; }
 
 .recipe-item {
   display: flex;
   flex-direction: row;
   text-transform: uppercase;
-  margin: 0.4rem;
   align-items: center;
-  padding: 0.6rem 0; }
-
-.recipe-item p {
-  margin-left: 1rem 0.5rem; }
+  padding: 10px 8px; }
+  .recipe-item p {
+    margin-left: 1rem 0.5rem; }
 
 .recipe-item img {
   margin: 0.1rem 0.6rem;
   /* border: 1px solid  */
-  box-shadow: -3px -3px, 0 -3px, 1px -3px, -3px 1px, 1px 1px; }
+  box-shadow: -3px -3px #1a71a9, 0 -3px #1a71a9, 1px -3px #1a71a9, -3px 1px #1a71a9, 1px 1px #1a71a9; }
 
 .recipe-item.white {
-  background-color: white; }
+  background-color: #ffffff; }
 
 .recipe-item.grey {
   background-color: #E9E9E9; }
 
 /* cuisine */
+.cuisine-wrapper {
+  background-color: #ffffff; }
+
+.cuisine-wrapper ul {
+  padding-bottom: 1.3rem; }
+
 .cuisine-wrapper ul li {
   list-style: none;
-  margin: 0.9rem 0;
-  width: 50%; }
+  padding: 0;
+  margin: 0;
+  padding: 0.5rem;
+  display: block; }
 
 .cuisine-list-wrapper {
   -moz-columns: 2;
-       columns: 2; }
+       columns: 2;
+  padding: 0 14px; }
 
 /* media query */
 /* tablet small */
-/* variables add */
 @media (min-width: 500px) {
   .cuisine-list-wrapper {
     -moz-columns: 3;
@@ -444,7 +455,7 @@ header .toggle {
 
 @media (min-width: 800px) {
   #side-bar {
-    float: right; }
+    order: 8; }
   .cuisine-list-wrapper {
     -moz-columns: 1;
          columns: 1; } }
@@ -479,7 +490,9 @@ header .toggle {
   #content div {
     margin: 2rem 0; }
 
-.footer {
-  text-align: center; }
+footer p {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem; }
 
 /*# sourceMappingURL=styles.css.map */
