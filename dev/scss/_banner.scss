@@ -1,0 +1,34 @@
+#banner {
+
+    padding: 0px 15px 0px 15px;
+
+    figure {
+        margin:0;
+        position: relative;
+    }
+
+    picture {
+        position: relative;
+        overflow: hidden;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    figcaption {
+        background-color: black;
+        text-transform: uppercase;
+        opacity: 75%;
+        color: white;
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 8px;
+        padding: 8px;
+    }
+
+
+}
