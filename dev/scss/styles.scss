@@ -1,0 +1,17 @@
+// normlaize (box-sizing + screen reader text)
+@import 'normalize';
+
+// mixins and variable declarations
+@import 'variables';
+@import 'mixins';
+
+// aesthetic declarations
+@import 'typography';
+
+//layout partials
+@import 'wrapper';
+@import 'header';
+@import 'banner';
+@import 'main-content';
+@import 'article';
+@import 'footer';
