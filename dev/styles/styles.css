@@ -376,6 +376,7 @@ body {
 header .toggle {
   font-size: 5rem; }
 
+<<<<<<< HEAD
 #side-bar h2 {
   text-transform: uppercase; }
 
@@ -421,5 +422,59 @@ header .toggle {
 
 .footer {
   text-align: center; }
+=======
+#banner {
+  padding: 0px 15px 0px 15px; }
+  #banner figure {
+    margin: 0;
+    position: relative; }
+  #banner picture {
+    position: relative;
+    overflow: hidden; }
+  #banner img {
+    width: 100%; }
+  #banner figcaption {
+    background-color: black;
+    text-transform: uppercase;
+    opacity: 75%;
+    color: white;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 8px;
+    padding: 8px; }
+
+#content {
+  padding: 0px 15px 0px 15px; }
+  #content article {
+    background-color: white;
+    padding: 0px 15px 0px 15px;
+    margin-bottom: .5rem;
+    position: relative; }
+    #content article h2 {
+      background-color: white;
+      color: #1a71a9;
+      text-transform: uppercase;
+      padding: 10px 0 0 0;
+      line-height: 2rem;
+      margin: 0; }
+    #content article p {
+      margin-top: 0;
+      font-size: 1rem; }
+    #content article button {
+      text-transform: uppercase;
+      border: none;
+      font-size: 15px;
+      padding: .5rem;
+      position: absolute;
+      right: 6px;
+      bottom: 8px; }
+  #content .extra {
+    padding-bottom: 3rem; }
+  #content div {
+    margin: 2rem 0; }
+>>>>>>> baf38e1587e3834742171093d18900849b157642
 
 /*# sourceMappingURL=styles.css.map */
