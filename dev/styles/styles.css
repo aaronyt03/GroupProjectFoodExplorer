@@ -361,7 +361,9 @@ body {
   font-weight: 300;
   font-size: 1.2rem;
   line-height: 1.5;
-  color: black; }
+  color: black;
+  background-image: url(../images/bg.jpg);
+  background-repeat: repeat; }
   body h2,
   body button,
   body footer {
@@ -370,11 +372,66 @@ body {
     background-color: #1a71a9; }
 
 #wrapper {
-  background-image: url(../images/bg.jpg);
-  background-repeat: repeat; }
+  max-width: 1050px;
+  margin: 0 auto; }
 
-header .toggle {
-  font-size: 2.5rem; }
+header {
+  padding: 0 1rem 0 1rem; }
+  header .top-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    header .top-area .toggle {
+      font-size: 1.7rem;
+      color: #005991; }
+  header #slide-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    header #slide-menu .search-bar {
+      position: relative; }
+    header #slide-menu .search-bar input {
+      background-color: #d8d8d8;
+      border: solid 1px #606060;
+      height: 35px; }
+    header #slide-menu .search-icon {
+      position: absolute;
+      right: 2%;
+      bottom: 15%; }
+    header #slide-menu .search-bar, header #slide-menu .search-bar input, header #slide-menu nav, header #slide-menu .social-media {
+      width: 100%; }
+  header .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    header .nav-menu li {
+      width: 100%;
+      text-align: center;
+      background-color: #17649d;
+      border-top: solid 1px #024d87;
+      border-bottom: solid 1px #024d87; }
+      header .nav-menu li a {
+        color: #e7f5f9;
+        text-decoration: none;
+        font-size: 1.4rem; }
+  header .social-media {
+    font-size: 1.3rem;
+    color: #1a71a9; }
+    header .social-media ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      background-color: #f8f8f8; }
+      header .social-media ul li {
+        padding: 0.5rem;
+        display: inline-block; }
+        header .social-media ul li a {
+          color: #1c6396; }
 
 #banner {
   padding: 0px 15px 0px 15px; }
