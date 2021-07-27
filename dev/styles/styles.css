@@ -376,7 +376,29 @@ body {
 header .toggle {
   font-size: 5rem; }
 
-<<<<<<< HEAD
+#banner {
+  padding: 0px 15px 0px 15px; }
+  #banner figure {
+    margin: 0;
+    position: relative; }
+  #banner picture {
+    position: relative;
+    overflow: hidden; }
+  #banner img {
+    width: 100%; }
+  #banner figcaption {
+    background-color: black;
+    text-transform: uppercase;
+    opacity: 75%;
+    color: white;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 8px;
+    padding: 8px; }
+
 #side-bar h2 {
   text-transform: uppercase; }
 
@@ -420,31 +442,12 @@ header .toggle {
     -moz-columns: 3;
          columns: 3; } }
 
-.footer {
-  text-align: center; }
-=======
-#banner {
-  padding: 0px 15px 0px 15px; }
-  #banner figure {
-    margin: 0;
-    position: relative; }
-  #banner picture {
-    position: relative;
-    overflow: hidden; }
-  #banner img {
-    width: 100%; }
-  #banner figcaption {
-    background-color: black;
-    text-transform: uppercase;
-    opacity: 75%;
-    color: white;
-    position: absolute;
-    z-index: 3;
-    width: 100%;
-    left: 0;
-    right: 0;
-    bottom: 8px;
-    padding: 8px; }
+@media (min-width: 800px) {
+  #side-bar {
+    float: right; }
+  .cuisine-list-wrapper {
+    -moz-columns: 1;
+         columns: 1; } }
 
 #content {
   padding: 0px 15px 0px 15px; }
@@ -475,6 +478,8 @@ header .toggle {
     padding-bottom: 3rem; }
   #content div {
     margin: 2rem 0; }
->>>>>>> baf38e1587e3834742171093d18900849b157642
+
+.footer {
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
