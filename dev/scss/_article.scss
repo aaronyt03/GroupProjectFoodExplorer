@@ -26,7 +26,8 @@
         button {
             text-transform: uppercase;
             border: none;
-            font-size: 15px;
+            font-size: 18px;
+            font-weight: 400;
             padding: .5rem;
             position: absolute;
             right: 6px;
@@ -42,5 +43,50 @@
 
     div {
         margin: 2rem 0;
+
+
+        a {
+            font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+            text-decoration:none;
+            font-weight: 400;
+            color:map-get($colors, light-header-bg);
+            font-size: 2rem;
+        }
+
+        span {
+            padding-left: 10px;
+        }
     }
+}
+
+@media (min-width: $breakpoint-mobile-large) {
+
+}
+
+@media (min-width: $breakpoint-tablet-small) {
+
+}
+
+@media (min-width: $breakpoint-tablet-large) {
+#content {
+    article {
+        padding: 1rem;
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        button {
+            position: absolute;
+            right: 18px;
+            bottom: 25px
+
+        }
+    }
+    
+}
+}
+
+@media (min-width: $breakpoint-desktop) {
+
 }

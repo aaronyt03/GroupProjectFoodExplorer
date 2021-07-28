@@ -361,7 +361,9 @@ body {
   font-weight: 300;
   font-size: 1.2rem;
   line-height: 1.5;
-  color: black; }
+  color: black;
+  background-image: url(../images/bg.jpg);
+  background-repeat: repeat; }
   body h2,
   body button,
   body footer {
@@ -370,8 +372,8 @@ body {
     background-color: #1a71a9; }
 
 #wrapper {
-  background-image: url(../images/bg.jpg);
-  background-repeat: repeat; }
+  max-width: 1050px;
+  margin: 0 auto; }
 
 header .toggle {
   font-size: 5rem; }
@@ -391,6 +393,8 @@ header .toggle {
     text-transform: uppercase;
     opacity: 75%;
     color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
     position: absolute;
     z-index: 3;
     width: 100%;
@@ -398,6 +402,24 @@ header .toggle {
     right: 0;
     bottom: 8px;
     padding: 8px; }
+
+@media (min-width: 500px) {
+  #banner img {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover; } }
+
+@media (min-width: 700px) {
+  #banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; }
+    #banner .fig1 {
+      grid-column: span 2; }
+    #banner img {
+      display: block; }
+    #banner picture {
+      padding-bottom: 0; } }
 
 #content {
   padding: 0px 15px 0px 15px; }
@@ -419,7 +441,8 @@ header .toggle {
     #content article button {
       text-transform: uppercase;
       border: none;
-      font-size: 15px;
+      font-size: 18px;
+      font-weight: 400;
       padding: .5rem;
       position: absolute;
       right: 6px;
@@ -428,5 +451,24 @@ header .toggle {
     padding-bottom: 3rem; }
   #content div {
     margin: 2rem 0; }
+    #content div a {
+      font-family: 'Roboto Condensed', sans-serif;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 400;
+      color: #1a71a9;
+      font-size: 2rem; }
+    #content div span {
+      padding-left: 10px; }
+
+@media (min-width: 700px) {
+  #content article {
+    padding: 1rem; }
+    #content article h2 {
+      font-size: 2.5rem; }
+    #content article button {
+      position: absolute;
+      right: 18px;
+      bottom: 25px; } }
 
 /*# sourceMappingURL=styles.css.map */
