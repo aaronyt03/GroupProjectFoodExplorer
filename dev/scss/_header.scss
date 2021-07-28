@@ -8,6 +8,7 @@ header {
         }
     }
     #slide-menu{
+        display:block;
         @include single-column-stack;
         // allow slide menu (containing Search, Nav-menu and Social media to take 100% of it's available space)
         width:100%;

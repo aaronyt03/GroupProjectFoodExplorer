@@ -387,6 +387,7 @@ header {
       font-size: 1.7rem;
       color: #005991; }
   header #slide-menu {
+    display: block;
     display: flex;
     flex-direction: column;
     justify-content: center;
