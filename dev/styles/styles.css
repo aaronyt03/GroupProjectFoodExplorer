@@ -520,7 +520,8 @@ header .toggle {
       margin: 0; }
     #content article p {
       margin-top: 0;
-      font-size: 1rem; }
+      font-size: 1rem;
+      padding-bottom: 1rem; }
     #content article button {
       text-transform: uppercase;
       border: none;
@@ -531,7 +532,7 @@ header .toggle {
       right: 6px;
       bottom: 8px; }
   #content .extra {
-    padding-bottom: 3rem; }
+    padding-bottom: 4rem; }
   #content div {
     margin: 2rem 0; }
     #content div a {
