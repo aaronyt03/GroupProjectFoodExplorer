@@ -437,6 +437,10 @@ header .toggle {
     #banner picture {
       padding-bottom: 0; } }
 
+@media (min-width: 800px) {
+  #banner {
+    margin-bottom: 10px; } }
+
 #side-bar {
   padding: 0 10px; }
 
@@ -494,6 +498,7 @@ header .toggle {
 
 @media (min-width: 800px) {
   #side-bar {
+    padding-left: 0;
     order: 8; }
   .cuisine-list-wrapper {
     -moz-columns: 1;
@@ -540,19 +545,21 @@ header .toggle {
       padding-left: 10px; }
 
 @media (min-width: 700px) {
-  #content article {
-    padding: 1rem; }
-    #content article h2 {
-      font-size: 2.5rem; }
-    #content article p {
-      margin-top: 0.5rem;
-      padding-bottom: 1.5rem; }
-    #content article button {
-      position: absolute;
-      right: 18px;
-      bottom: 25px; }
-  #content .extra {
-    padding-bottom: 2rem; } }
+  #content {
+    margin-top: 0; }
+    #content article {
+      padding: 1rem; }
+      #content article h2 {
+        font-size: 2.5rem; }
+      #content article p {
+        margin-top: 0.5rem;
+        padding-bottom: 1.5rem; }
+      #content article button {
+        position: absolute;
+        right: 18px;
+        bottom: 25px; }
+    #content .extra {
+      padding-bottom: 2rem; } }
 
 @media (min-width: 800px) {
   #content {

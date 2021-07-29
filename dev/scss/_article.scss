@@ -64,6 +64,8 @@
 
 @media (min-width: $breakpoint-tablet-large) {
 	#content {
+		margin-top: 0;
+
 		article {
 			padding: 1rem;
 			h2 {
