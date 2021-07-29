@@ -1,79 +1,72 @@
 #banner {
+	padding: 0px 15px 0px 15px;
 
-    padding: 0px 15px 0px 15px;
+	figure {
+		margin: 0;
+		position: relative;
+	}
 
-    figure {
-        margin:0;
-        position: relative;
-    }
+	picture {
+		position: relative;
+		overflow: hidden;
+	}
 
-    picture {
-        position: relative;
-        overflow: hidden;
-    }
+	img {
+		width: 100%;
+	}
 
-    img{
-        width: 100%;
-    }
-
-    figcaption {
-        background-color: black;
-        text-transform: uppercase;
-        opacity: 75%;
-        color: white;
-        font-size: 1.5rem;
-        font-weight: 400;
-        position: absolute;
-        z-index: 3;
-        width: 100%;
-        left: 0;
-        right: 0;
-        bottom: 8px;
-        padding: 8px;
-    }
-
-
+	figcaption {
+		background-color: black;
+		text-transform: uppercase;
+		opacity: 75%;
+		color: white;
+		font-size: 1.5rem;
+		font-weight: 400;
+		position: absolute;
+		z-index: 3;
+		width: 100%;
+		left: 0;
+		right: 0;
+		bottom: 8px;
+		padding: 8px;
+	}
 }
 
 @media (min-width: $breakpoint-mobile-large) {
-
 }
 
 @media (min-width: $breakpoint-tablet-small) {
-#banner {
-
-    img {
-        height: 250px;
-        object-fit: cover;
-        }
-
-
-    }
+	#banner {
+		img {
+			height: 250px;
+			object-fit: cover;
+		}
+	}
 }
 
 @media (min-width: $breakpoint-tablet-large) {
-#banner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    
-    .fig1 {
-        grid-column: span 2;
-    }
+	#banner {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
 
-    img {
-        display: block;
-    }
+		figcaption {
+			bottom: 0;
+		}
 
-    picture {
-            padding-bottom: 0;
-        
+		.fig1 {
+			grid-column: span 2;
+		}
 
-    }
+		img {
+			display: block;
+		}
 
-}
+		picture {
+			padding-bottom: 0;
+		}
+	}
 }
 
 @media (min-width: $breakpoint-desktop) {
-
 }

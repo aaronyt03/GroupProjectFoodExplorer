@@ -414,6 +414,8 @@ header .toggle {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px; }
+    #banner figcaption {
+      bottom: 0; }
     #banner .fig1 {
       grid-column: span 2; }
     #banner img {
@@ -426,7 +428,7 @@ header .toggle {
   #content article {
     background-color: white;
     padding: 0px 15px 0px 15px;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     position: relative; }
     #content article h2 {
       background-color: white;
@@ -443,7 +445,7 @@ header .toggle {
       border: none;
       font-size: 18px;
       font-weight: 400;
-      padding: .5rem;
+      padding: 0.5rem;
       position: absolute;
       right: 6px;
       bottom: 8px; }
@@ -470,5 +472,9 @@ header .toggle {
       position: absolute;
       right: 18px;
       bottom: 25px; } }
+
+@media (min-width: 800px) {
+  #content {
+    max-width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
