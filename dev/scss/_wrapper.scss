@@ -1,4 +1,12 @@
 #wrapper {
-	max-width:  $max-width-wrapper;
+	max-width: $max-width-wrapper;
 	margin: $margin-spacing;
+}
+
+
+@media (min-width: $breakpoint-desktop){
+	.body-wrapper{
+		display: flex;
+
+	}
 }
