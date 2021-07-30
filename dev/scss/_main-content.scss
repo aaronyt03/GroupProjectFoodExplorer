@@ -69,9 +69,7 @@
     }
 }
 @media(min-width: $breakpoint-desktop) {
-    #side-bar{
-        order: 8;
-    }
+
     .cuisine-list-wrapper{
         columns: 1;
     }

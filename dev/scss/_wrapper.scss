@@ -7,6 +7,12 @@
 @media (min-width: $breakpoint-desktop){
 	.body-wrapper{
 		display: flex;
-
+		flex-direction: column;
+	}
+	.wrapper-added{
+		display: flex;
+	}
+	#side-bar{
+		order: 100;
 	}
 }
