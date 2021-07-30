@@ -69,9 +69,29 @@
     }
 }
 @media(min-width: $breakpoint-desktop) {
+ 
+    #side-bar{
+        width: 25%;
+        h2{
+            font-size: 1.65rem;
+            padding: 0.2rem 0.6rem;
+        }
+        h2.recipes {
+            margin-top: 0;
 
+     }
+    }
     .cuisine-list-wrapper{
         columns: 1;
+    }
+    .cuisine-wrapper{
+        ul{
+            padding: 1rem;
+            margin: 0;
+            li{
+                padding: 0.2rem;
+            }
+        }
     }
 }
 

@@ -375,6 +375,15 @@ body {
   max-width: 1050px;
   margin: 0 auto; }
 
+@media (min-width: 800px) {
+  .body-wrapper {
+    display: flex;
+    flex-direction: column; }
+  .wrapper-added {
+    display: flex; }
+  #side-bar {
+    order: 100; } }
+
 header .toggle {
   font-size: 5rem; }
 
@@ -403,7 +412,26 @@ header .toggle {
     bottom: 8px;
     padding: 8px; }
 
-<<<<<<< HEAD
+@media (min-width: 500px) {
+  #banner img {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover; } }
+
+@media (min-width: 700px) {
+  #banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; }
+    #banner figcaption {
+      bottom: 0; }
+    #banner .fig1 {
+      grid-column: span 2; }
+    #banner img {
+      display: block; }
+    #banner picture {
+      padding-bottom: 0; } }
+
 #side-bar {
   padding: 0px 15px 0px 15px; }
 
@@ -460,31 +488,20 @@ header .toggle {
 
 @media (min-width: 800px) {
   #side-bar {
-    order: 8; }
+    width: 25%; }
+    #side-bar h2 {
+      font-size: 1.65rem;
+      padding: 0.2rem 0.6rem; }
+    #side-bar h2.recipes {
+      margin-top: 0; }
   .cuisine-list-wrapper {
     -moz-columns: 1;
-         columns: 1; } }
-=======
-@media (min-width: 500px) {
-  #banner img {
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover; } }
-
-@media (min-width: 700px) {
-  #banner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px; }
-    #banner figcaption {
-      bottom: 0; }
-    #banner .fig1 {
-      grid-column: span 2; }
-    #banner img {
-      display: block; }
-    #banner picture {
-      padding-bottom: 0; } }
->>>>>>> a9b35ad50a3ef7effe820cad400b76242f3ac35e
+         columns: 1; }
+  .cuisine-wrapper ul {
+    padding: 1rem;
+    margin: 0; }
+    .cuisine-wrapper ul li {
+      padding: 0.2rem; } }
 
 #content {
   padding: 0px 15px 0px 15px; }
