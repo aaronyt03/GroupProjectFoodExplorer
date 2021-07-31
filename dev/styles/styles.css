@@ -363,6 +363,8 @@ body {
   line-height: 1.5;
   color: black;
   background-image: url(../images/bg.jpg);
+  background-repeat: repeat;
+  background-image: url(../images/bg.jpg);
   background-repeat: repeat; }
   body h2,
   body button,
@@ -389,8 +391,133 @@ body {
       .body-wrapper #side-bar .recipes.title {
         margin-top: 0; } }
 
-header .toggle {
-  font-size: 5rem; }
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+  /* Search Bar Styles
+    --------------------------------------------- */
+  /* Main Nav Styles
+    --------------------------------------------- */
+  /* Social Media Ul Styles
+    --------------------------------------------- */
+  /* Tablet Small Layout
+    --------------------------------------------- */
+  /* Tablet Large Layout
+    --------------------------------------------- */ }
+  header .top-area {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    header .top-area .toggle {
+      font-size: 1.7rem;
+      color: #005991; }
+  header .search-bar, header .nav-menu, header .social-media {
+    display: none; }
+  header .search-bar, header .search-bar input, header nav, header .social-media {
+    width: 100%; }
+  header .search-bar {
+    position: relative; }
+    header .search-bar input {
+      background-color: #d8d8d8;
+      border: solid 1px #024d87;
+      height: 35.6px;
+      outline: none; }
+    header .search-bar .search-icon {
+      position: absolute;
+      right: 2%;
+      bottom: 15%; }
+  header .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    header .nav-menu li {
+      width: 100%;
+      text-align: center;
+      background-color: #17649d;
+      border: solid 1px #024d87; }
+      header .nav-menu li a {
+        color: #e7f5f9;
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: 400; }
+    header .nav-menu li:hover {
+      background-color: #FFF; }
+      header .nav-menu li:hover a {
+        color: #1c6396; }
+  header .social-media {
+    font-size: 1.3rem;
+    color: #1a71a9; }
+    header .social-media ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      background-color: #f8f8f8; }
+      header .social-media ul li {
+        padding: 0.5rem;
+        display: inline-block; }
+        header .social-media ul li a {
+          color: #1c6396; }
+  @media (min-width: 500px) {
+    header {
+      margin-bottom: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      /*Show the nav menu items in the center with a fixed distance between items*/ }
+      header .top-area {
+        max-width: 50%; }
+      header .search-bar, header .nav-menu, header .social-media {
+        display: block;
+        width: auto; }
+      header .toggle {
+        display: none; }
+      header .nav-menu {
+        margin-top: 5px;
+        width: 100%;
+        display: flex;
+        /*Display Nav items side to side*/
+        flex-direction: row; }
+      header .social-media {
+        display: none; } }
+  @media (min-width: 700px) {
+    header {
+      /*Show the nav menu items in the center with a fixed distance between items*/ }
+      header .search-bar, header .nav-menu, header .social-media {
+        display: block; }
+      header .nav-menu {
+        width: 100%;
+        /*Display Nav items side to side*/
+        display: flex;
+        flex-direction: row; }
+      header .top-area {
+        order: -2; }
+      header .search-bar {
+        order: -1; }
+      header .social-media {
+        margin-bottom: 5px;
+        display: block;
+        order: -1; }
+        header .social-media a:hover {
+          color: #9ea0a2; } }
+  @media (min-width: 800px) {
+    header .search-bar {
+      order: 1;
+      margin-bottom: 0px;
+      margin-top: 5px;
+      width: 20%; }
+    header nav {
+      width: 80%;
+      margin-top: 0px; } }
 
 #banner {
   padding: 0 10px; }
