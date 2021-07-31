@@ -396,7 +396,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem 0 1rem;
+  padding: 0px 10px 0px 10px;
   /* Search Bar Styles
     --------------------------------------------- */
   /* Main Nav Styles
@@ -425,7 +425,6 @@ header {
     position: relative; }
     header .search-bar input {
       background-color: #d8d8d8;
-      border: solid 1px #024d87;
       height: 35.6px;
       outline: none; }
     header .search-bar .search-icon {
@@ -466,7 +465,7 @@ header {
           color: #1c6396; }
   @media (min-width: 500px) {
     header {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -474,7 +473,11 @@ header {
       align-items: center;
       flex-direction: row;
       /*Show the nav menu items in the center with a fixed distance between items*/ }
+      header nav {
+        background-color: #005991;
+        padding: 0 10px 0 10px; }
       header .top-area {
+        padding-left: 20px;
         max-width: 50%; }
       header .search-bar, header .nav-menu, header .social-media {
         display: block;
@@ -482,12 +485,12 @@ header {
       header .toggle {
         display: none; }
       header .nav-menu {
-        margin-top: 5px;
         width: 100%;
         display: flex;
         /*Display Nav items side to side*/
         flex-direction: row; }
       header .social-media {
+        padding-right: 10px;
         display: none; } }
   @media (min-width: 700px) {
     header {
@@ -511,12 +514,13 @@ header {
           color: #9ea0a2; } }
   @media (min-width: 800px) {
     header .search-bar {
+      background-color: #005991;
       order: 1;
       margin-bottom: 0px;
-      margin-top: 5px;
-      width: 20%; }
+      width: 38%; }
     header nav {
-      width: 80%;
+      padding: 0px;
+      width: 62%;
       margin-top: 0px; } }
 
 #banner {
