@@ -1,46 +1,96 @@
 #content {
+	padding: 0 10px;
 
-    padding: 0px 15px 0px 15px;
+	article {
+		background-color: white;
+		padding: 0px 15px 0px 15px;
+		margin-bottom: 0.5rem;
+		position: relative;
 
-    article {
-        background-color: white;
-        padding: 0px 15px 0px 15px;
-        margin-bottom: .5rem;
-        position: relative;
+		h2 {
+			background-color: white;
+			color: map-get($colors, light-header-bg);
+			text-transform: uppercase;
+			padding: 10px 0 0 0;
+			line-height: 2rem;
+			margin: 0;
+		}
 
-        h2 {
-            background-color: white;
-            color: map-get($colors, light-header-bg);
-            text-transform: uppercase;
-            padding:10px 0 0 0;
-            line-height: 2rem;
-            margin: 0
-        }
+		p {
+			margin-top: 0;
+			font-size: 1rem;
+			padding-bottom: 1rem;
+		}
 
-        p {
-            margin-top: 0;
-            font-size: 1rem;
-            // padding-bottom: 2rem;
-        }
+		button {
+			text-transform: uppercase;
+			border: none;
+			font-size: 18px;
+			font-weight: 400;
+			padding: 0.5rem;
+			position: absolute;
+			right: 6px;
+			bottom: 8px;
+		}
+	}
 
-        button {
-            text-transform: uppercase;
-            border: none;
-            font-size: 15px;
-            padding: .5rem;
-            position: absolute;
-            right: 6px;
-            bottom:8px
+	.extra {
+		padding-bottom: 4rem;
+	}
 
-        }
+	div {
+		margin: 2rem 0;
 
-    }
+		a {
+			font-family: 'Roboto Condensed', sans-serif;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: 400;
+			color: map-get($colors, light-header-bg);
+			font-size: 2rem;
+		}
 
-    .extra{
-        padding-bottom: 3rem;
-    }
+		span {
+			padding-left: 10px;
+		}
+	}
+}
 
-    div {
-        margin: 2rem 0;
-    }
+@media (min-width: $breakpoint-mobile-large) {
+}
+
+@media (min-width: $breakpoint-tablet-small) {
+}
+
+@media (min-width: $breakpoint-tablet-large) {
+	#content {
+		margin-top: 0;
+
+		article {
+			padding: 1rem;
+			h2 {
+				font-size: 2.5rem;
+			}
+
+			p {
+				margin-top: 0.5rem;
+				padding-bottom: 1.5rem;
+			}
+
+			button {
+				position: absolute;
+				right: 18px;
+				bottom: 25px;
+			}
+		}
+		.extra {
+			padding-bottom: 2rem;
+		}
+	}
+}
+
+@media (min-width: $breakpoint-desktop) {
+	#content {
+		max-width: 100%;
+	}
 }
