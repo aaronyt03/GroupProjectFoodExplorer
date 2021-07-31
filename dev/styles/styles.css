@@ -376,8 +376,23 @@ body {
   margin: 0 auto; }
 
 header {
-  padding: 0 1rem 0 1rem; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+  /* Search Bar Styles
+    --------------------------------------------- */
+  /* Main Nav Styles
+    --------------------------------------------- */
+  /* Social Media Ul Styles
+    --------------------------------------------- */
+  /* Tablet Small Layout
+    --------------------------------------------- */
+  /* Tablet Large Layout
+    --------------------------------------------- */ }
   header .top-area {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -386,25 +401,21 @@ header {
     header .top-area .toggle {
       font-size: 1.7rem;
       color: #005991; }
-  header #slide-menu {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  header .search-bar, header .nav-menu, header .social-media {
+    display: none; }
+  header .search-bar, header .search-bar input, header nav, header .social-media {
     width: 100%; }
-    header #slide-menu .search-bar {
-      position: relative; }
-    header #slide-menu .search-bar input {
+  header .search-bar {
+    position: relative; }
+    header .search-bar input {
       background-color: #d8d8d8;
-      border: solid 1px #606060;
-      height: 35px; }
-    header #slide-menu .search-icon {
+      border: solid 1px #024d87;
+      height: 35.6px;
+      outline: none; }
+    header .search-bar .search-icon {
       position: absolute;
       right: 2%;
       bottom: 15%; }
-    header #slide-menu .search-bar, header #slide-menu .search-bar input, header #slide-menu nav, header #slide-menu .social-media {
-      width: 100%; }
   header .nav-menu {
     list-style: none;
     padding: 0;
@@ -413,12 +424,16 @@ header {
       width: 100%;
       text-align: center;
       background-color: #17649d;
-      border-top: solid 1px #024d87;
-      border-bottom: solid 1px #024d87; }
+      border: solid 1px #024d87; }
       header .nav-menu li a {
         color: #e7f5f9;
         text-decoration: none;
-        font-size: 1.4rem; }
+        font-size: 1.4rem;
+        font-weight: 400; }
+    header .nav-menu li:hover {
+      background-color: #FFF; }
+      header .nav-menu li:hover a {
+        color: #1c6396; }
   header .social-media {
     font-size: 1.3rem;
     color: #1a71a9; }
@@ -433,6 +448,60 @@ header {
         display: inline-block; }
         header .social-media ul li a {
           color: #1c6396; }
+  @media (min-width: 500px) {
+    header {
+      margin-bottom: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      /*Show the nav menu items in the center with a fixed distance between items*/ }
+      header .top-area {
+        max-width: 50%; }
+      header .search-bar, header .nav-menu, header .social-media {
+        display: block;
+        width: auto; }
+      header .toggle {
+        display: none; }
+      header .nav-menu {
+        margin-top: 5px;
+        width: 100%;
+        display: flex;
+        /*Display Nav items side to side*/
+        flex-direction: row; }
+      header .social-media {
+        display: none; } }
+  @media (min-width: 700px) {
+    header {
+      /*Show the nav menu items in the center with a fixed distance between items*/ }
+      header .search-bar, header .nav-menu, header .social-media {
+        display: block; }
+      header .nav-menu {
+        width: 100%;
+        /*Display Nav items side to side*/
+        display: flex;
+        flex-direction: row; }
+      header .top-area {
+        order: -2; }
+      header .search-bar {
+        order: -1; }
+      header .social-media {
+        margin-bottom: 5px;
+        display: block;
+        order: -1; }
+        header .social-media a:hover {
+          color: #9ea0a2; } }
+  @media (min-width: 800px) {
+    header .search-bar {
+      order: 1;
+      margin-bottom: 0px;
+      margin-top: 5px;
+      width: 20%; }
+    header nav {
+      width: 80%;
+      margin-top: 0px; } }
 
 #banner {
   padding: 0px 15px 0px 15px; }

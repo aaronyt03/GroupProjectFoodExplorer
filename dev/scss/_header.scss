@@ -1,25 +1,40 @@
 header {
-    padding: $left-right-spacing;
+    @include single-column-stack; // make header a single column stack for mobile
+
+    padding: $left-right-spacing; // left & Right padding in header
     .top-area{
+        width:100%;
+
+        // while the top area of header contains the title and toggle button justify space between
         @include justify-space-between;
         .toggle {
             font-size: 1.7rem;
             color: #005991;
         }
     }
-    #slide-menu{
-        display:block;
-        @include single-column-stack;
-        // allow slide menu (containing Search, Nav-menu and Social media to take 100% of it's available space)
-        width:100%;
 
-        .search-bar {
-            position:relative;
-        }
-        .search-bar input {
+    //Hide search bar, nav and social media ul on mobile
+    .search-bar, .nav-menu, .social-media {
+        display:none;
+    }
+
+    // allow these to take 100% of the space in mobile layout
+    .search-bar, .search-bar input, nav, .social-media {
+        width:100%;
+    }
+    
+
+    /* Search Bar Styles
+    --------------------------------------------- */
+
+    .search-bar {
+        position:relative;
+        
+        input {
             background-color: #d8d8d8;
-            border: solid 1px #606060;
-            height:35px;
+            border: solid 1px #024d87;
+            height:35.6px;
+            outline: none;
         }
 
         .search-icon {
@@ -27,27 +42,36 @@ header {
             right:2%;
             bottom: 15%;
         }
-        .search-bar, .search-bar input, nav, .social-media {
-            width:100%;
-        }
-        
     }
+
+    /* Main Nav Styles
+    --------------------------------------------- */
     .nav-menu {
         @include ul-reset;
         li {
             width:100%;
             text-align:center;
             background-color: #17649d;
+            border: solid 1px #024d87;
             a {
                 color: #e7f5f9;
                 text-decoration: none;
                 font-size:1.4rem;
+                font-weight: 400;
             }
-            border-top: solid 1px #024d87;
-            border-bottom: solid 1px #024d87;
+
+        }
+
+        li:hover {
+            background-color: #FFF;
+            a{
+                color: #1c6396
+            }
         }
     }
 
+    /* Social Media Ul Styles
+    --------------------------------------------- */
     .social-media{
         font-size: 1.3rem;
         color: map-get($colors, light-header-bg);
@@ -58,11 +82,91 @@ header {
             li {
                 padding: $generic-spacing / 2;
                 display:inline-block;
-                
                 a{
                     color: #1c6396
                 }
             }
+        }
+    }   
+
+    /* Tablet Small Layout
+    --------------------------------------------- */
+    @media (min-width: $breakpoint-tablet-small){
+        margin-bottom:5px;
+        @include justify-space-between;
+        flex-direction: row;
+        
+        .top-area {
+            max-width: 50%;
+        }
+
+        // make elements visible and not 100% anymore
+        .search-bar, .nav-menu, .social-media {
+            display:block;
+            width: auto;
+        }
+
+        .toggle {
+            display:none;
+        }
+
+        /*Show the nav menu items in the center with a fixed distance between items*/
+        .nav-menu {
+            margin-top: 5px;
+            width:100%; // make nav take up a full row
+            display:flex; /*Display Nav items side to side*/
+            flex-direction:row;
+        }
+
+        .social-media {
+            display:none;
+        }
+    }
+
+    /* Tablet Large Layout
+    --------------------------------------------- */
+    @media (min-width: $breakpoint-tablet-large){
+        .search-bar, .nav-menu, .social-media {
+            display:block
+        }
+
+        /*Show the nav menu items in the center with a fixed distance between items*/
+        .nav-menu {
+            width:100%;
+            /*Display Nav items side to side*/
+            display:flex;
+            flex-direction:row;
+        }
+
+        .top-area {
+            order: -2;
+        }
+
+        .search-bar {
+            order: -1;
+        }
+
+        .social-media {
+            margin-bottom:5px;
+            display:block;
+            order: -1;
+            a:hover {
+                color: #9ea0a2;
+            }
+        }
+    }
+
+    @media(min-width: $breakpoint-desktop) {
+        .search-bar {
+            order: 1;
+            margin-bottom: 0px;
+            margin-top: 5px;
+            width:20%;
+        }
+
+        nav {
+            width:80%;
+            margin-top: 0px;
         }
     }
 }
