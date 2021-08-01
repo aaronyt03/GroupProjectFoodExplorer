@@ -444,7 +444,8 @@ header {
         color: #e7f5f9;
         text-decoration: none;
         font-size: 1.4rem;
-        font-weight: 400; }
+        font-weight: 400;
+        width: 100%; }
     header .nav-menu li:hover {
       background-color: #FFF; }
       header .nav-menu li:hover a {
@@ -458,11 +459,27 @@ header {
       margin: 0;
       text-align: center;
       background-color: #f8f8f8; }
+      header .social-media ul .item {
+        padding: 0px 10px 0px 10px; }
       header .social-media ul li {
+        position: relative;
         padding: 0.5rem;
         display: inline-block; }
         header .social-media ul li a {
-          color: #1c6396; }
+          display: block;
+          color: #1c6396;
+          height: 100%; }
+        header .social-media ul li .overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          color: #9ea0a2;
+          width: 100%;
+          height: 0%;
+          transition: 0.7s ease-in-out; }
+      header .social-media ul li:hover .overlay {
+        height: 100%; }
   @media (min-width: 500px) {
     header {
       margin-bottom: 10px;
@@ -476,6 +493,8 @@ header {
       header nav {
         background-color: #005991;
         padding: 0 10px 0 10px; }
+      header .overlay {
+        display: none; }
       header .top-area {
         padding-left: 20px;
         max-width: 50%; }
@@ -510,7 +529,9 @@ header {
         margin-bottom: 5px;
         display: block;
         order: -1; }
-        header .social-media a:hover {
+        header .social-media li .overlay {
+          display: none; }
+        header .social-media li:hover a {
           color: #9ea0a2; } }
   @media (min-width: 800px) {
     header .search-bar {
