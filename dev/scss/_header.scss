@@ -83,9 +83,8 @@ header {
 
             //hover effect animation styles
             li {
-                position: relative; // for mobile make list items containers for overlay elements
-                padding: $generic-spacing / 2;
                 display:inline-block;
+                position: relative; // for mobile make list items containers for overlay elements
                 a{
                     display: block;
                     color: map-get($colors, $nav-icons);
@@ -128,8 +127,8 @@ header {
         flex-direction: row;
         
         .top-area {
-            padding-left:1.25rem;
-            max-width: 50%;
+            padding-left: $generic-spacing;
+            max-width: 40%;
         }
 
         // make elements visible and not 100% anymore
@@ -137,7 +136,7 @@ header {
             display:block;
             width: auto;
         }
-
+        
         .toggle {
             display:none;
         }
