@@ -1,7 +1,7 @@
 // spacing
-$left-right-spacing: 0 1rem 0 1rem;
+$left-right-spacing: 0 0.625rem 0 0.625rem; // 0 10px 0 10px
 $margin-spacing: 0 auto;
-$generic-spacing: 1rem;
+$generic-spacing: 0.625rem; //10px 
 
 // color palette
 $border-color: solid 1px blue;
@@ -12,6 +12,13 @@ $colors: (
 	section-header-text: #ffffff,
 	body-font-color: black,
 	body-bg-color: #f1f6f9,
+	//extra header colors
+	mobile-item-border: #024d87,
+	mobile-item-bg:#17649d,
+	nav-icons: #1c6396,
+	nav-font-color: #e7f5f9,
+	nav-effect-hover: #9ea0a2,
+	input-bg: #d8d8d8
 );
 
 // borders
