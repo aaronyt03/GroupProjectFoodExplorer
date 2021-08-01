@@ -7,8 +7,8 @@ header {
         // while the top area of header contains the title and toggle button justify space between
         @include justify-space-between;
         .toggle {
-            font-size: 1.7rem;
-            color: map-get($colors, $dark-header-bg);
+            font-size: 2rem;
+            color: map-get($colors, dark-header-bg);
         }
     }
 
@@ -29,7 +29,7 @@ header {
     .search-bar {
         position:relative;
         input {
-            background-color: map-get($colors, $input-bg);
+            background-color: map-get($colors, input-bg);
             height:2.225rem;
             outline: none;
         }
@@ -48,10 +48,10 @@ header {
         li {
             width:100%;
             text-align:center;
-            background-color: map-get($colors, $mobile-item-bg);
-            border: solid 1px map-get($colors, $mobile-item-border);
+            background-color: map-get($colors, mobile-item-bg);
+            border: solid 1px map-get($colors, mobile-item-border);
             a {
-                color: map-get($colors, $nav-font-color);
+                color: map-get($colors, nav-font-color);
                 text-decoration: none;
                 font-size:1.4rem;
                 font-weight: 400;
@@ -61,9 +61,9 @@ header {
 
         //invert nav colors on hover
         li:hover {
-            background-color: map-get($colors, $section-header-text);
+            background-color: map-get($colors, section-header-text);
             a{
-                color: map-get($colors, $nav-icons);
+                color: map-get($colors, nav-icons);
             }
         }
     }
@@ -76,7 +76,7 @@ header {
         ul{
             @include ul-reset;
             text-align:center;
-            background-color: map-get($colors, $body-bg-color);
+            background-color: map-get($colors, body-bg-color);
             .item {
                 padding: $left-right-spacing;
             }
@@ -87,7 +87,7 @@ header {
                 position: relative; // for mobile make list items containers for overlay elements
                 a{
                     display: block;
-                    color: map-get($colors, $nav-icons);
+                    color: map-get($colors, nav-icons);
                     height: 100%;
                 }
 
@@ -96,7 +96,7 @@ header {
                     bottom: 0;
                     left: 0;
                     right: 0;
-                    color: map-get($colors, $nav-effect-hover);
+                    color: map-get($colors, nav-effect-hover);
                     width: 100%;
                     height: 0%;
                     transition: 0.7s ease-in-out;
@@ -115,14 +115,10 @@ header {
         margin-bottom: $generic-spacing;
 
         nav {
-            background-color: map-get($colors, $dark-header-bg);
+            background-color: map-get($colors, dark-header-bg);
             padding: $left-right-spacing;
         }
 
-        .overlay {
-            display:none;
-        }
-        
         @include justify-space-between;
         flex-direction: row;
         
@@ -190,7 +186,7 @@ header {
 
             li:hover {
                 a{
-                    color: map-get($colors, $nav-effect-hover);
+                    color: map-get($colors, nav-effect-hover);
                 }
             }
         }
@@ -198,7 +194,7 @@ header {
 
     @media(min-width: $breakpoint-desktop) {
         .search-bar {
-            background-color: map-get($colors, $dark-header-bg);
+            background-color: map-get($colors, dark-header-bg);
             order: 1;
             margin-bottom: 0px;
             width:38%;
