@@ -1,15 +1,6 @@
 #wrapper {
 	max-width: $max-width-wrapper;
 	margin: $margin-spacing;
-
-
-	//this was added so I can add the header that appeared in the screenshot
-	@media (max-width: $breakpoint-desktop){
-		max-width: 100vw;
-	}
-	header, main, footer {
-		max-width: $max-width-wrapper;
-	}
 }
 
 @media (min-width: $breakpoint-desktop) {
