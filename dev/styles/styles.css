@@ -532,14 +532,21 @@ header {
           color: #9ea0a2; } }
   @media (min-width: 800px) {
     header .search-bar {
-      background-color: #005991;
       order: 1;
       margin-bottom: 0px;
       width: 38%; }
     header nav {
       padding: 0px;
       margin-top: 0px;
-      width: 62%; } }
+      width: 62%; }
+    header .blue-line {
+      position: absolute;
+      top: 43px;
+      left: 0;
+      height: 35.6px;
+      width: 100vw;
+      background-color: #005991;
+      z-index: -1; } }
 
 #banner {
   padding: 0 0.625rem; }
@@ -691,6 +698,12 @@ header {
       font-weight: 400;
       color: #1a71a9;
       font-size: 2rem; }
+    #content div .round-icon {
+      font-size: 1.6rem;
+      background-color: #1a71a9;
+      color: #ffffff;
+      padding: 1px 8px;
+      border-radius: 50%; }
     #content div span {
       padding-left: 0.625rem; }
 

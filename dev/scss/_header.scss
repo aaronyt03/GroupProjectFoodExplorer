@@ -194,7 +194,6 @@ header {
 
     @media(min-width: $breakpoint-desktop) {
         .search-bar {
-            background-color: map-get($colors, dark-header-bg);
             order: 1;
             margin-bottom: 0px;
             width:38%;
@@ -205,5 +204,17 @@ header {
             margin-top: 0px;
             width:62%;
         }
+
+        //blue line in header on desktop mode 
+        .blue-line {
+            position:absolute;
+            top: 43px;
+            left: 0;
+            height:35.6px; // make this line the exact same height as the nav 
+            width:100vw; // make this blue line span the viewport width, unlike the header itself
+            background-color:map-get($colors, dark-header-bg);
+            z-index:-1;
+        }
     }
 }
+
