@@ -698,6 +698,12 @@ header {
       font-weight: 400;
       color: #1a71a9;
       font-size: 2rem; }
+    #content div .round-icon {
+      font-size: 1.6rem;
+      background-color: #1a71a9;
+      color: #ffffff;
+      padding: 1px 8px;
+      border-radius: 50%; }
     #content div span {
       padding-left: 0.625rem; }
 

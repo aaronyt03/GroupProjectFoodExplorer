@@ -50,6 +50,14 @@
 			font-size: 2rem;
 		}
 
+		.round-icon {
+			font-size:1.6rem;
+			background-color: map-get($colors, light-header-bg);
+			color: map-get($colors, section-header-text);
+			padding: 1px 8px;
+			border-radius:50%;
+		}
+
 		span {
 			padding-left: $generic-spacing;
 		}
