@@ -207,3 +207,16 @@ header {
         }
     }
 }
+
+//this is the blue line that appears on the header in the screen shot I put it outside of the header so it doesn't inherit the header styles but it is still "technically in the header so I style it on this page
+@media(min-width: $breakpoint-desktop){
+    .blue-line {
+        position:fixed;
+        top: 6.5%;
+        left: 0;
+        height:36px;
+        width:100vw;
+        background-color:#005991;
+        z-index:-1;
+    }
+}
