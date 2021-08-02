@@ -548,8 +548,8 @@ header {
 
 @media (min-width: 800px) {
   .blue-line {
-    position: fixed;
-    top: 6.5%;
+    position: absolute;
+    top: 43px;
     left: 0;
     height: 36px;
     width: 100vw;
